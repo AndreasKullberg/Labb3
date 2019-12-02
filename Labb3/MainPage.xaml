@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Labb3.MainPage">
+    <StackLayout VerticalOptions="Center">
+
+        <StackLayout Orientation="Vertical"
+                     >
+            <Label Text="Inmatat Belopp:"
+                   HorizontalOptions="Center"
+                   />
+            <Label x:Name="AmountLabel"
+                   Text="0"
+                   HorizontalOptions="Center"
+                   />
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical"
+                     Margin="0, 0, 0, 10"
+                     >
+            <Label Text="Momssats:"
+                   HorizontalOptions="Center"
+                   />
+            <Label x:Name="VatLabel"
+                   Text="0%"
+                   HorizontalOptions="Center"
+                   />
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical"
+                     Margin="0, 0, 0, 10"
+                     >
+            <Label Text="Uträknat Belopp:"
+                   HorizontalOptions="Center"
+                   />
+            <Label x:Name="CalculatedAmountLabel"
+                   Text="0"
+                   HorizontalOptions="Center"
+                />
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical"
+                     Margin="0, 0, 0, 10"
+                     >
+            <Label Text="Uträknad Moms:"
+                   HorizontalOptions="Center"
+                   />
+            <Label x:Name="CalculatedVatLabel"
+                   Text="0"
+                   HorizontalOptions="Center"
+                   />
+        </StackLayout>
+
+        <StackLayout
+            Margin="10, 20"
+            >
+            <Entry VerticalOptions="CenterAndExpand"
+                   x:Name="AmountEntry"
+                   Placeholder="Skriv in belopp"
+                   Keyboard="Numeric"
+                   />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Clicked="EightClicked"
+                    Text="8%"
+                    HorizontalOptions="CenterAndExpand"
+                    />
+            <Button Clicked="TwelveClicked"
+                    Text="12%"
+                    HorizontalOptions="CenterAndExpand"
+                    />
+            <Button Clicked="TwentyFiveClicked"
+                    Text="25%"
+                    HorizontalOptions="CenterAndExpand"
+                    />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
